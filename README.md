@@ -9,15 +9,17 @@ Used to switch entry point in production.
 Before:
 
 ```js
-import foo from 'some-package/jsnext'
-import bar from 'another-package/jsnext-foo-bar'
+import A from 'packageA/jsnext'
+import B from 'packageB/jsnext.js'
+import C from 'packageC/jsnext-foo-bar'
 ```
 
 After:
 
 ```js
-import foo from 'some-package'
-import bar from 'another-package/jsnext-foo-bar'
+import A from 'packageA'
+import B from 'packageB'
+import C from 'packageC/jsnext-foo-bar'
 ```
 
 ## Concept

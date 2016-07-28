@@ -21,6 +21,22 @@ it('transforms "../foo/bar/jsnext to foo-bar"', function () {
     assert(actual === expected)
 })
 
+it('transforms "foo-bar/jsnext.js to foo-bar"', function () {
+    const code = 'import abc from "foo-bar/jsnext.js";'
+    const expected = 'import abc from "foo-bar";'
+
+    const actual = babel.transform(code, { plugins: [pluginPath] }).code
+    assert(actual === expected)
+})
+
+it('does not transform "foo-bar/jsnext.jsx to foo-bar"', function () {
+    const code = 'import abc from "foo-bar/jsnext.jsx";'
+    const expected = 'import abc from "foo-bar/jsnext.jsx";'
+
+    const actual = babel.transform(code, { plugins: [pluginPath] }).code
+    assert(actual === expected)
+})
+
 it('does not transform "foo-bar/jsnext/abc"', function () {
     const code = 'import abc from "foo-bar/jsnext/abc";'
     const expected = 'import abc from "foo-bar/jsnext/abc";'
