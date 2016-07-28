@@ -20,7 +20,7 @@ import foo from 'some-package'
 import bar from 'another-package/jsnext-foo-bar'
 ```
 
-> ## Concept
+## Concept
 It's similar to [rollup.js](http://rollupjs.org/)'s [jsnext:main](https://github.com/rollup/rollup/wiki/jsnext:main).
 It's designed for switching entry points of your microservices of babel / flow-typed npm modules.
 
