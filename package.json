@@ -1,0 +1,25 @@
+{
+  "name": "babel-plugin-transform-strip-jsnext",
+  "version": "1.0.0",
+  "description": "A babel plugin to strip '/jsnext' path from importing module names.",
+  "repository": "https://github.com/CureApp/babel-plugin-transform-strip-jsnext",
+  "license": "MIT",
+  "main": "index",
+  "keywords": [
+    "babel-plugin",
+    "jsnext"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Shin Suzuki <shinout310@gmail.com>",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "index.js"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "mocha": "^2.5.3"
+  }
+}
