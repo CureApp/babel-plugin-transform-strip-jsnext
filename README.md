@@ -18,7 +18,7 @@ After:
 
 ```js
 import A from 'packageA'
-import B from 'packageB'
+import B from 'packageB/jsnext.js'
 import C from 'packageC/jsnext-foo-bar'
 ```
 

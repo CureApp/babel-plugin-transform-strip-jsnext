@@ -21,9 +21,9 @@ it('transforms "../foo/bar/jsnext to foo-bar"', function () {
     assert(actual === expected)
 })
 
-it('transforms "foo-bar/jsnext.js to foo-bar"', function () {
+it('does not transform "foo-bar/jsnext.js to foo-bar"', function () {
     const code = 'import abc from "foo-bar/jsnext.js";'
-    const expected = 'import abc from "foo-bar";'
+    const expected = 'import abc from "foo-bar/jsnext.js";'
 
     const actual = babel.transform(code, { plugins: [pluginPath] }).code
     assert(actual === expected)
