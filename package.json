@@ -19,7 +19,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "babel-core": "^6.11.4",
+    "babel-core": "^6.13.2",
     "mocha": "^2.5.3"
   }
 }
