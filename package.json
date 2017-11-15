@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-strip-jsnext",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A babel plugin to strip '/jsnext' path from importing module names.",
   "repository": "https://github.com/CureApp/babel-plugin-transform-strip-jsnext",
   "license": "MIT",
